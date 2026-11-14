@@ -199,12 +199,14 @@
   .mob-bar .btn{flex:1;padding:13px}
   @media(max-width:760px){ .mob-bar{display:flex} body{padding-bottom:70px} }
 
-  .rv{opacity:0;transform:translateY(18px);transition:opacity .5s ease,transform .5s ease}
-  .rv.on{opacity:1;transform:none}
-  @media (prefers-reduced-motion: reduce){ .rv{opacity:1;transform:none} }
+  .js .rv{opacity:0;transform:translateY(18px);transition:opacity .5s ease,transform .5s ease}
+  .js .rv.on{opacity:1;transform:none}
+  @media (prefers-reduced-motion: reduce){ .js .rv{opacity:1;transform:none} }
 </style>
 </head>
 <body>
+
+<script>document.documentElement.classList.add('js');</script>
 
 <header id="header">
   <div class="wrap head">
